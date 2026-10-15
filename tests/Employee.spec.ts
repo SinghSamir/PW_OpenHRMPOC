@@ -22,6 +22,7 @@ test.describe('Employee Tests', () => {
     const addEmployee = new AddEmployee(page);
 
     // Step 1: Login
+    console.log('Starting Test 1 - Add Employee');
     await hp.gotoLoginPage();
     await hp.login(UserName, Password);
     await hp.verifyLoginSuccess();
@@ -70,6 +71,7 @@ test.describe('Employee Tests', () => {
 
 
       // Step 1: Login
+      console.log('Starting Test 2 - Verify Employee');
     await hp.gotoLoginPage();
     await hp.login(UserName, Password);
     await hp.verifyLoginSuccess();
@@ -95,6 +97,7 @@ test.describe('Employee Tests', () => {
     const employeeList = new EmployeeList(page);
 
     // Step 1: Login
+    console.log('Starting Test 3 - Delete Employee');
     await hp.gotoLoginPage();
     await hp.login(UserName, Password);
     await hp.verifyLoginSuccess();
