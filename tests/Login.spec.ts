@@ -23,7 +23,7 @@ test.describe('Login Tests', () => {
     },
     {
       name: 'invalid username',
-      username: UserName,
+      username: 'InvalidUsername',
       password: Password,
     },
   ];
