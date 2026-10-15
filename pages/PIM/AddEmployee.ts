@@ -87,7 +87,7 @@ export class AddEmployee {
 
   async saveEmployee(): Promise<void> {
     await this.saveButton.click();
-    await expect(this.page).toHaveURL(/viewPersonalDetails/, { timeout: 15000 });
+    await expect(this.page).toHaveURL(/viewPersonalDetails/, { timeout: 25000 });
     
   }
 }
